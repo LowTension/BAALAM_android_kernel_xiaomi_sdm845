@@ -2329,6 +2329,11 @@ static inline int ext4_fname_prepare_lookup(struct inode *dir,
 	return 0;
 }
 
+static inline bool ext4_encrypted_inode(struct inode *inode)
+{
+	return ext4_test_inode_flag(inode, EXT4_INODE_ENCRYPT);
+}
+
 static inline void ext4_fname_free_filename(struct ext4_filename *fname)
 {
 	struct fscrypt_name name;

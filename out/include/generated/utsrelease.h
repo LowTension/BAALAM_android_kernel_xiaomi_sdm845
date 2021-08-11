@@ -1,1 +1,0 @@
-#define UTS_RELEASE "4.9.279-TeamDroidMTK-692836-gbbfefa1cf2a6"
